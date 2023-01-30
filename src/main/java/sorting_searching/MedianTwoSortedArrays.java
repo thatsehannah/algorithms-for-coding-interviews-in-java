@@ -11,21 +11,10 @@ public class MedianTwoSortedArrays {
 
     static double getMedian(int[] array1, int[] array2) {
         int[] mergedArray = new int[array1.length + array2.length];
-        int i = 0;
-        int j = 0;
-        while (j < array1.length) {
-            mergedArray[i] = array1[j];
-            i++;
-            j++;
-        }
-        j = 0;
-        while (j < array2.length) {
-            mergedArray[i] = array2[j];
-            i++;
-            j++;
-        }
-
+        System.arraycopy(array1, 0, mergedArray, 0, array1.length);
+        System.arraycopy(array2, 0, mergedArray, array1.length, array2.length);
         Arrays.sort(mergedArray);
+
         double median = 0;
         if (mergedArray.length % 2 == 0) {
             int med1 = mergedArray[(mergedArray.length / 2) - 1];

@@ -1,15 +1,19 @@
 package sorting_searching;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.HashSet;
+import java.util.*;
 
 public class FindDuplicatesInArray {
     public static void main(String[] args) {
-        int[] arr = {1, 3, 4, 3, 5, 4, 100, 100};
+        int[] arr = {7, 5, 4, 3, 11, 5, 11, 9, 3, 11};
         System.out.println(findDuplicates(arr));
 
+        int[] arr2 = {6, 5, 7};
+        System.out.println(findDuplicates(arr2));
+
+        int[] arr3 = {};
+        System.out.println(findDuplicates(arr3));
     }
+
 
     // Using hashing
     static ArrayList<Integer> findDuplicates(int[] array) {

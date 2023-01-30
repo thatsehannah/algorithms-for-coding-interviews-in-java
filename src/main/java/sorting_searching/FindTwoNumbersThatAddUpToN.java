@@ -21,12 +21,6 @@ public class FindTwoNumbersThatAddUpToN {
         return result;
     }
 
-    static int[] findSumUsingBinarySearch(int[] arr, int sum) {
-        int[] result = new int[2];
-
-        return result;
-    }
-
     static int[] findSumUsingHashing(int[] arr, int sum) {
         int[] result = new int[2];
         HashSet<Integer> set = new HashSet<>();

@@ -8,8 +8,6 @@ public class FibonacciTabulated {
         System.out.println(fibTabulated2(n));
     }
 
-    // This approach would be the best approach if you wanted to print
-    // the sequence up to the target
     static int fibTabulated1(int target, int[] lookupArray) {
 
         // Initializes the first two values
@@ -26,7 +24,9 @@ public class FibonacciTabulated {
 
     // Since we only want to get the value at the target in the sequence,
     // we're not storing the values at each iteration until i equals the
-    // target. This reduces space complexity as opposed to the solution above
+    // target. This reduces space complexity as opposed to the solution above.
+    // Actually, we can use this solution to print the sequence up to the
+    // target as well
     static int fibTabulated2(int target) {
         if (target <= 1) {
             return target;

@@ -26,7 +26,7 @@ public class FibonacciTabulated {
     // we're not storing the values at each iteration until i equals the
     // target. This reduces space complexity as opposed to the solution above.
     // Actually, we can use this solution to print the sequence up to the
-    // target as well
+    // target as well if we wanted to
     static int fibTabulated2(int target) {
         if (target <= 1) {
             return target;
